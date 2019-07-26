@@ -166,6 +166,7 @@ nav .logInBTN:hover {
   background: #E97676;
 }
 .footer {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -351,6 +352,7 @@ header {
   background-size: 100% auto;
   background-size: cover;
   max-width: 1440px;
+  margin: auto;
 }
 header .header_content {
   display: flex;
@@ -393,6 +395,8 @@ header .logInBTN2:hover {
   background-color: #fff;
 }
 .aboutWunderList {
+  max-width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,16 +409,24 @@ header .logInBTN2:hover {
 .centerContent {
   display: flex;
   flex-wrap: wrap;
-  height: 1500px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   width: 1440px;
+  max-width: 100%;
+  margin: auto;
 }
 .centerContent img {
-  width: 720px;
-  height: 446px;
+  width: 100%;
+}
+.contentArea,
+.image1,
+.image2,
+.image3 {
+  width: 50%;
 }
 .centerContent p {
-  width: 710px;
-  height: 446px;
+  padding: 3% 20%;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
