@@ -1,23 +1,31 @@
 //nav
 nav{
-    // padding-top: 5rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: flex-end;
-    align-items: center;
     height: 100px;
     width: 100%;
-    // background-image: url(../Img/Home_page_Images/landingImage.jpg);
+    background-color: 0, 0, 0, 1;
+    // border: solid red 3px;
 
-    
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        width: 100px;
+    }
+
+    ul li a:hover{
+        color: #E97676;
+    }
 
     a{
         text-decoration: none;
-        color: #fff;
+        color: white;
         font-family: 'Roboto', sans-serif;
         font-size: 1.4rem;
-        width: 9%;
+        width: 200px;
     }
 
     
@@ -30,12 +38,14 @@ nav{
         border: none;
         width: 105px;
         height: 36px;
+        cursor: pointer;
+    }
+
+    .logInBTN:hover{
+        color: #fff;
+        background: #E97676;
     }
 
 
-    // padding-top: 50px;
 
-    // .homeNavBar a{
-    //     width: 200px;
-    // }
 }
