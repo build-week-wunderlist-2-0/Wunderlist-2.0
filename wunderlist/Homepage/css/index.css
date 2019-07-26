@@ -126,63 +126,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-header {
-  width: 100%;
-  height: 581px;
-  background-image: url(../Img/Home_page_Images/landingImage.jpg);
-  background-size: 100% auto;
-  max-width: 1440px;
-}
-header .header_content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 250px;
-  margin-top: 50px;
-}
-header .header_content h1 {
-  font-size: 5.5rem;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  letter-spacing: 3px;
-  margin-left: 3%;
-  height: 100px;
-}
-header .header_content h2 {
-  font-size: 2rem;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 3px;
-  margin-left: 7%;
-  height: 100px;
-  padding-top: 28px;
-}
-header .header_content button {
-  margin-left: 12%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  color: #fff;
-  background-color: #E97676;
-  width: 350px;
-  height: 65px;
-  border: none;
-}
 nav {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: flex-end;
-  align-items: center;
   height: 100px;
   width: 100%;
+  background-color: 0, 0, 0, 1;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav li {
+  width: 100px;
+}
+nav ul li a:hover {
+  color: #E97676;
 }
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
-  width: 9%;
+  width: 200px;
 }
 nav .logInBTN {
   margin-right: 2%;
@@ -192,6 +158,11 @@ nav .logInBTN {
   border: none;
   width: 105px;
   height: 36px;
+  cursor: pointer;
+}
+nav .logInBTN:hover {
+  color: #fff;
+  background: #E97676;
 }
 footer {
   display: flex;
@@ -201,8 +172,8 @@ footer {
 header {
   width: 100%;
   height: 581px;
-  background-image: url(../Img/About_Page_Images/action-adult-asphalt-343469.jpg);
-  background-size: 100% auto;
+  background-image: url(../Img/Home_page_Images/landingImage.jpg);
+  background-size: cover;
   max-width: 1440px;
 }
 header .header_content {
@@ -239,24 +210,40 @@ header .header_content button {
   width: 350px;
   height: 65px;
   border: none;
+  cursor: pointer;
 }
-.about .middle_content {
+header .logInBTN2:hover {
+  color: #E97676;
+  background-color: #fff;
+}
+footer {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  border: solid 3px red;
+  flex-direction: column;
+  margin-top: 250px;
+  width: 100%;
+  height: 500px;
+  border: solid purple 3px;
 }
-.about h1 {
-  font-size: 5rem;
+footer h1 {
+  font-size: 3rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+footer h2 {
+  font-size: 3rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  height: 200px;
+}
+footer h3 {
+  font-size: 3rem;
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
-  height: 100px;
-}
-.about p {
-  font-size: 1rem;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  height: 200px;
 }
