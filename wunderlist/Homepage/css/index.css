@@ -149,6 +149,7 @@ nav a {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   width: 200px;
+  margin-right: 20px;
 }
 nav .logInBTN {
   margin-right: 2%;
@@ -169,7 +170,7 @@ nav .logInBTN:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 1440px;
   height: 550px;
 }
 .footer h1 {
@@ -342,4 +343,79 @@ header .header_content button {
 header .logInBTN2:hover {
   color: #E97676;
   background-color: #fff;
+}
+header {
+  width: 100%;
+  height: 581px;
+  background-image: url(../Img/Home_page_Images/landingImage.jpg);
+  background-size: 100% auto;
+  background-size: cover;
+  max-width: 1440px;
+}
+header .header_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  margin-top: 50px;
+}
+header .header_content h1 {
+  font-size: 5.5rem;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-left: 3%;
+  height: 100px;
+}
+header .header_content h2 {
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+  margin-left: 7%;
+  height: 100px;
+  padding-top: 28px;
+}
+header .header_content button {
+  margin-left: 12%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #E97676;
+  width: 350px;
+  height: 65px;
+  border: none;
+  cursor: pointer;
+}
+header .logInBTN2:hover {
+  color: #E97676;
+  background-color: #fff;
+}
+.aboutWunderList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 1440px;
+  font-size: 4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.centerContent {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1500px;
+  width: 1440px;
+}
+.centerContent img {
+  width: 720px;
+  height: 446px;
+}
+.centerContent p {
+  width: 710px;
+  height: 446px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
