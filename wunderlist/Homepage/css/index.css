@@ -170,7 +170,7 @@ nav .logInBTN:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1440px;
+  width: 100%;
   height: 550px;
 }
 .footer h1 {
@@ -343,6 +343,27 @@ header .header_content button {
 header .logInBTN2:hover {
   color: #E97676;
   background-color: #fff;
+}
+.headerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 144px;
+  width: 100%;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: Bold;
+  color: #E97676;
+}
+.featureIcons {
+  display: flex;
+  justify-content: space-around;
+  height: 125px;
+}
+.featureIcons img {
+  width: 80px;
+  height: 80px;
 }
 header {
   width: 100%;
