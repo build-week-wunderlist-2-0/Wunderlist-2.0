@@ -1,61 +1,7 @@
 // Home page 
-header{
 
-    width: 100%;
-    height: 581px;
-    background-image: url(../Img/Home_page_Images/landingImage.jpg);  
-    // background-size: 100% auto;
-    background-size: cover;
-    max-width: 1440px;
-    
-
-    .header_content {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 250px;
-      margin-top: 50px;
-      // border: solid 3px white;
-
-    }
-
-    .header_content h1{
-      font-size: 5.5rem;
-      color: #fff;
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold;
-      letter-spacing: 3px;
-      margin-left: 3%;
-      height: 100px;
-    }
-
-    .header_content h2 {
-      font-size: 2rem;
-      color: #fff;
-      font-family: 'Roboto', sans-serif;
-      letter-spacing: 3px;
-      margin-left: 7%;
-      height: 100px;
-      padding-top: 28px;
-    }
-
-    .header_content button {
-      margin-left: 12%;
-      font-family: 'Roboto', sans-serif;
-      font-size: 2rem;
-      color: #fff;
-      background-color: #E97676;
-      width: 350px;
-      height: 65px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .logInBTN2:hover{
-        color: #E97676;
-        background-color: #fff;
-    }
-
+.homePageImage{
+  background-image: url(../Img/Home_page_Images/landingPageImage.jpg);  
 }
 
 .headerTitle{
@@ -112,10 +58,56 @@ header{
   height: 175px;
   line-height: 20px;
   text-align: center;
+  margin-top: 20px;
+  margin: 20px;
   
 }
 
 .centerIMG img{
   width: 100%;
-  height: 500px;
+  height: 300px;
+}
+
+.glance{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 144px;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.glance h1{
+  width: 100%;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+}
+
+.glance p{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+  line-height: 35px;
+}
+
+.carousel{
+  display: flex;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.carousel img{
+ width: 350px;
+ height: 250px; 
 }
