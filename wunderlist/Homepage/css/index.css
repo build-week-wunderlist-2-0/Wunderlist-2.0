@@ -213,6 +213,7 @@ nav .logInBTN:hover {
   background: #E97676;
 }
 .footer {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,6 +397,7 @@ nav .logInBTN:hover {
 .centerIMG img {
   height: 300px;
   max-width: 1440px;
+  margin: auto;
 }
 .glance {
   display: flex;
@@ -437,6 +439,8 @@ nav .logInBTN:hover {
   background-image: url(../Img/About_Page_Images/action-adult-asphalt-343469.jpg);
 }
 .aboutWunderList {
+  max-width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -453,14 +457,19 @@ nav .logInBTN:hover {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 40px;
+
 }
 .centerContent img {
-  width: 720px;
-  height: 446px;
+  width: 100%;
+}
+.contentArea,
+.image1,
+.image2,
+.image3 {
+  width: 50%;
 }
 .centerContent p {
-  width: 710px;
-  height: 446px;
+  padding: 3% 20%;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
