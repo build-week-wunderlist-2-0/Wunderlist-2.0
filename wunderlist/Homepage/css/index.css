@@ -213,6 +213,7 @@ nav .logInBTN:hover {
   background: #E97676;
 }
 .footer {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -433,44 +434,94 @@ nav .logInBTN:hover {
   width: 350px;
   height: 250px;
 }
-.aboutPageImage {
-  background-image: url(../Img/About_Page_Images/action-adult-asphalt-343469.jpg);
+.homePageImage {
+  background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
 }
-.aboutWunderList {
+.headerTitle {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180px;
-  width: 1440px;
-  font-size: 4rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-.centerContent {
-  display: flex;
-  flex-wrap: wrap;
+  height: 144px;
   max-width: 1440px;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: Bold;
+  color: #E97676;
+}
+.featureIcons {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1440px;
+  height: 100px;
+}
+.featureIcons img {
+  width: 80px;
+  height: 80px;
+}
+.featureInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200px;
+  max-width: 1440px;
+}
+.featureInfo h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+}
+.featureInfo p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  height: 175px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin: 20px;
+}
+.centerIMG img {
+  height: 300px;
+  max-width: 1440px;
+}
+.glance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 144px;
+  max-width: 1440px;
+  margin-top: 45px;
+}
+.glance h1 {
   width: 100%;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-.centerContent img {
-  width: 720px;
-  height: 446px;
-}
-.centerContent p {
-  width: 710px;
-  height: 446px;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+}
+.glance p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
   line-height: 35px;
 }
-.contentArea p {
+.carousel {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.carousel img {
+  width: 350px;
+  height: 250px;
 }
 .contactPageImage {
   background-image: url(../Img/Contact_Page_Images/antique-black-communication-821754.jpg);
