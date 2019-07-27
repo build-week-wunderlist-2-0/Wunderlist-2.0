@@ -1,222 +1,113 @@
 // Home page 
-header{
 
-    width: 100%;
-    height: 581px;
-    background-image: url(../Img/Home_page_Images/landingImage.jpg);  
-    // background-size: 100% auto;
-    background-size: cover;
-    max-width: 1440px;
-    
+.homePageImage {
+  background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
+}
 
-    .header_content {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 250px;
-      margin-top: 50px;
-      // border: solid 3px white;
+.headerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 144px;
+  max-width: 1440px;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: Bold;
+  color: #E97676;
+}
 
-    }
-
-    .header_content h1{
-      font-size: 5.5rem;
-      color: #fff;
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold;
-      letter-spacing: 3px;
-      margin-left: 3%;
-      height: 100px;
-    }
-
-    .header_content h2 {
-      font-size: 2rem;
-      color: #fff;
-      font-family: 'Roboto', sans-serif;
-      letter-spacing: 3px;
-      margin-left: 7%;
-      height: 100px;
-      padding-top: 28px;
-    }
-
-    .header_content button {
-      margin-left: 12%;
-      font-family: 'Roboto', sans-serif;
-      font-size: 2rem;
-      color: #fff;
-      background-color: #E97676;
-      width: 350px;
-      height: 65px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .logInBTN2:hover{
-        color: #E97676;
-        background-color: #fff;
-    }
+.featureIcons {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1440px;
+  height: 100px;
 
 }
 
-// footer {
+.featureIcons img {
+  width: 80px;
+  height: 80px;
+}
 
-//   display: flex;
-//   flex-direction: column;
-//   // margin-top: 250px;
-//   width: 100%;
-//   height: 600px;
-//   border: solid purple 10px;
+.featureInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200px;
+  max-width: 1440px;
+  // border: solid red 3px;
+  // font-family: 'Roboto', sans-serif;
 
-//   h1{
-//     font-size: 5rem;
-//     color: black;
-//     font-family: 'Roboto', sans-serif;
-//     font-weight: bold;
-//     letter-spacing: 3px;
-//   }
+}
 
-//   h2{
-//     font-size: 3rem;
-//     color: black;
-//     font-family: 'Roboto', sans-serif;
-//     font-weight: 400;
-//     letter-spacing: 3px;
-//   }
+.featureInfo h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
 
-//   h3{
-//     font-size: 3rem;
-//     color: black;
-//     font-family: 'Roboto', sans-serif;
-//     font-weight: 300;
-//     letter-spacing: 3px;
-//   }
+}
 
-//   .joinUsToday{
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     //border: solid red 3px;
-//     align-items: center;
-//   }
+.featureInfo p {
+  // border: solid goldenrod 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  height: 175px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin: 20px;
 
-//   .joinUs{
-//     height: 100px;
-//   }
+}
 
-//   .joinUsToday p {
-//     width: 532px;
-//     font-size: 2rem;
-//     font-family: 'Roboto', sans-serif;
-//     letter-spacing: 5px;
-//     line-height: 41px;
-//   }
+.centerIMG img {
+  height: 300px;
+  max-width: 1440px;
+}
 
-//   .footerBTN{
-//     display: flex;
-//     width: 66%;
-//     //border: solid blue 3px;
-//     justify-content: space-evenly;
-//     margin-top: 30px;
+.glance {
 
-//   }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 144px;
+  max-width: 1440px;
+  margin-top: 45px;
+}
 
-//   .footerBTN button {
+.glance h1 {
+  width: 100%;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+}
 
-//     font-family: 'Roboto', sans-serif;
-//     font-size: 2rem;
-//     color: #fff;
-//     background-color: #E97676;
-//     width: 350px;
-//     height: 43px;
-//     border: none;
-//     cursor: pointer;
-//   }
+.glance p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+  line-height: 35px;
+}
 
-//   .footerBTN button:hover{
-//       color: #E97676;
-//       background-color: #fff;
-//   }
+.carousel {
+  display: flex;
 
-//   .yellowFooter{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     margin-top: 30px;
-//     background-color: #F0BC5E;
-//     //border: 3px solid red;
-//     width: 100%;
-//     height: 180px;
-    
-//   }
+  margin-top: 50px;
+  margin-bottom: 50px;
 
-//   .subscribe{
-//     height: 140px;
-//   }
-//   .subscribe h2{
-//     display: flex;
-//     width: 100%;
-//     justify-content: center;
-//     font-weight: bold;
-//     color: #fff;
-//     height: 54px;
-//     margin-top: 5px;
-//   }
-//   .subscribe h3{
-//     display: flex;
-//     width: 100%;
-//     justify-content: center;
-//     font-weight: 300;
-//     font-size: 2rem;
-//     color: #fff;
-//     height: 48px;
-//     margin-top: 5px;
-//   }
+}
 
-//   .email{
-//     display: flex;
-//     width: 66%;
-//     //border: solid blue 3px;
-//     justify-content: space-evenly;
-//     margin-bottom: 6px;
-
-//   }
-
-//   .email input{
-//     width: 322px;
-//     height: 54px;
-//     border: none;
-//     border-radius: 10px;
-//     font-family: 'Roboto', sans-serif;
-//     font-size: 2rem;
-//     color: #C2C2C2;
-//   }
-
-//   .email button{
-//       font-family: 'Roboto', sans-serif;
-//       font-size: 2rem;
-//       color: #C2C2C2;
-//       border: none;
-//       width: 280px;
-//       height: 54px;
-//       border-radius: 10px;
-//       cursor: pointer;
-
-//   }
-
-//   .email button:hover{
-//     color: #E97676;
-//     background-color: #fff;
-    
-//   }
-
-//   .iconRow{
-//     display: flex;
-//     width: 50%;
-//     justify-content: space-between;
-//     margin-top: 10px;
-//     opacity: .3;
-//   }
-
-
-
-// }
+.carousel img {
+  width: 350px;
+  height: 250px;
+}

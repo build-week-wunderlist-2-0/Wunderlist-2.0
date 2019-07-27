@@ -126,6 +126,53 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+header {
+  width: 100%;
+  height: 581px;
+  background-size: 100% auto;
+  background-size: cover;
+  max-width: 1440px;
+}
+header .header_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  margin-top: 50px;
+}
+header .header_content h1 {
+  font-size: 5.5rem;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-left: 3%;
+  height: 100px;
+}
+header .header_content h2 {
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+  margin-left: 7%;
+  height: 100px;
+  padding-top: 28px;
+}
+header .header_content button {
+  margin-left: 12%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #E97676;
+  width: 350px;
+  height: 65px;
+  border: none;
+  cursor: pointer;
+}
+header .logInBTN2:hover {
+  color: #E97676;
+  background-color: #fff;
+}
 nav {
   display: flex;
   justify-content: flex-end;
@@ -171,7 +218,7 @@ nav .logInBTN:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1440px;
+  max-width: 1440px;
   height: 550px;
 }
 .footer h1 {
@@ -298,101 +345,98 @@ nav .logInBTN:hover {
   margin-top: 10px;
   opacity: 0.3;
 }
-header {
-  width: 100%;
-  height: 581px;
-  background-image: url(../Img/Home_page_Images/landingImage.jpg);
-  background-size: cover;
+.homePageImage {
+  background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
+}
+.headerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 144px;
+  max-width: 1440px;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: Bold;
+  color: #E97676;
+}
+.featureIcons {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1440px;
+  height: 100px;
+}
+.featureIcons img {
+  width: 80px;
+  height: 80px;
+}
+.featureInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200px;
   max-width: 1440px;
 }
-header .header_content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 250px;
-  margin-top: 50px;
-}
-header .header_content h1 {
-  font-size: 5.5rem;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
+.featureInfo h3 {
+  text-align: center;
+  font-size: 1rem;
   font-weight: bold;
-  letter-spacing: 3px;
-  margin-left: 3%;
-  height: 100px;
-}
-header .header_content h2 {
-  font-size: 2rem;
-  color: #fff;
+  letter-spacing: 4px;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 3px;
-  margin-left: 7%;
-  height: 100px;
-  padding-top: 28px;
+  margin-bottom: 5px;
 }
-header .header_content button {
-  margin-left: 12%;
+.featureInfo p {
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  color: #fff;
-  background-color: #E97676;
-  width: 350px;
-  height: 65px;
-  border: none;
-  cursor: pointer;
+  font-size: 1rem;
+  height: 175px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin: 20px;
 }
-header .logInBTN2:hover {
-  color: #E97676;
-  background-color: #fff;
-}
-header {
-  width: 100%;
-  height: 581px;
-  background-image: url(../Img/Home_page_Images/landingImage.jpg);
-  background-size: 100% auto;
-  background-size: cover;
+.centerIMG img {
+  height: 300px;
   max-width: 1440px;
   margin: auto;
 }
-header .header_content {
+.glance {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 144px;
+  max-width: 1440px;
+  margin-top: 45px;
+}
+.glance h1 {
   width: 100%;
-  height: 250px;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+}
+.glance p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+  line-height: 35px;
+}
+.carousel {
+  display: flex;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
-header .header_content h1 {
-  font-size: 5.5rem;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  letter-spacing: 3px;
-  margin-left: 3%;
-  height: 100px;
-}
-header .header_content h2 {
-  font-size: 2rem;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 3px;
-  margin-left: 7%;
-  height: 100px;
-  padding-top: 28px;
-}
-header .header_content button {
-  margin-left: 12%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  color: #fff;
-  background-color: #E97676;
+.carousel img {
   width: 350px;
-  height: 65px;
-  border: none;
-  cursor: pointer;
+  height: 250px;
 }
-header .logInBTN2:hover {
-  color: #E97676;
-  background-color: #fff;
+.aboutPageImage {
+  background-image: url(../Img/About_Page_Images/action-adult-asphalt-343469.jpg);
 }
 .aboutWunderList {
   max-width: 100%;
@@ -409,12 +453,11 @@ header .logInBTN2:hover {
 .centerContent {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 1440px;
-  max-width: 100%;
-  margin: auto;
+  max-width: 1440px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
 }
 .centerContent img {
   width: 100%;
@@ -430,4 +473,132 @@ header .logInBTN2:hover {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
+  line-height: 35px;
+}
+.contentArea p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contactPageImage {
+  background-image: url(../Img/Contact_Page_Images/antique-black-communication-821754.jpg);
+}
+.ContactCenterContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ContactCenterContent h1 {
+  max-width: 1440px;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+}
+.ContactCenterContent p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+  line-height: 35px;
+}
+.contactForm {
+  display: flex;
+  height: 100px;
+  max-width: 1440px;
+  background-color: #F0BC5E;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactForm input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #C2C2C2;
+}
+.contactMessage {
+  display: flex;
+  height: 400px;
+  max-width: 1440px;
+  background-color: #F0BC5E;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.contactMessage input {
+  width: 1027px;
+  height: 375px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #C2C2C2;
+}
+.blogPageImage {
+  background-image: url(../Img/Blog_Images/antique-blog-blogger-1898254.jpg);
+}
+.blogEntry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 450px;
+  max-width: 1440px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.blogEntryText {
+  width: 692px;
+}
+.blogEntry h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+.blogEntry p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
+}
+.blogEntry img {
+  width: 692px;
+  height: 442px;
+  border-radius: 10px;
+}
+.blogEntry button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #E97676;
+  width: 350px;
+  height: 43px;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+.blogEntry button:hover {
+  color: #E97676;
+  background-color: #fff;
+}
+.blogEntry2 img {
+  width: 692px;
+  height: 442px;
 }
