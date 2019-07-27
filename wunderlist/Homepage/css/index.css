@@ -542,11 +542,13 @@ nav .logInBTN:hover {
 .blogEntry {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
   flex-wrap: wrap;
   height: 450px;
-  border: solid 2px goldenrod;
   max-width: 1440px;
   margin-top: 40px;
+  margin-bottom: 60px;
 }
 .blogEntryText {
   width: 692px;
@@ -569,6 +571,7 @@ nav .logInBTN:hover {
 .blogEntry img {
   width: 692px;
   height: 442px;
+  border-radius: 10px;
 }
 .blogEntry button {
   font-family: 'Roboto', sans-serif;
@@ -579,9 +582,14 @@ nav .logInBTN:hover {
   height: 43px;
   border: none;
   cursor: pointer;
-  width: 692px;
+  margin-top: 40px;
+  margin-left: 150px;
 }
 .blogEntry button:hover {
   color: #E97676;
   background-color: #fff;
+}
+.blogEntry2 img {
+  width: 692px;
+  height: 442px;
 }
