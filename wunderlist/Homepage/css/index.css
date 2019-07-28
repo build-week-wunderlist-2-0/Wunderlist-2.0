@@ -178,7 +178,12 @@ nav {
   justify-content: flex-end;
   height: 100px;
   width: 100%;
-  background-color: 0, 0, 0, 1;
+}
+@media only screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    width: 100%;
+  }
 }
 nav ul {
   display: flex;
