@@ -191,17 +191,25 @@ header .logInBTN2:hover {
   header .header_content {
     display: flex;
     margin-top: 0;
-    order: -1;
-  }
-  header nav {
-    order: 2;
+    align-items: center;
   }
   header .header_content h1 {
-    border: solid goldenrod 2px;
+    width: 100%;
+    text-align: center;
     font-size: 4rem;
+    margin: 0;
   }
-  header .homePageImage {
-    background: none;
+  header .header_content h2 {
+    font-size: 1.5rem;
+    font-weight: 300px;
+    padding: 0;
+    height: 64px;
+  }
+  header .header_content button {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    width: 238px;
+    height: 33px;
   }
 }
 nav {
