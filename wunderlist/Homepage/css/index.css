@@ -173,24 +173,31 @@ header .logInBTN2:hover {
   color: #E97676;
   background-color: #fff;
 }
+@media only screen and (max-width: 992px) {
+  header .header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header Header {
+    display: flex;
+  }
+}
 nav {
   display: flex;
   justify-content: flex-end;
   height: 100px;
-  width: 100%;
-}
-@media only screen and (max-width: 700px) {
-  nav {
-    display: flex;
-    width: 100%;
-  }
+  max-width: 1440px;
 }
 nav ul {
   display: flex;
+  width: 500px;
   align-items: center;
 }
 nav li {
-  width: 100px;
+  flex: 1 1 200px;
 }
 nav ul li a:hover {
   color: #E97676;
@@ -200,8 +207,6 @@ nav a {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
-  width: 200px;
-  margin-right: 20px;
 }
 nav .logInBTN {
   margin-right: 2%;
@@ -209,13 +214,27 @@ nav .logInBTN {
   font-size: 1.4rem;
   color: #E97676;
   border: none;
-  width: 105px;
+  width: 140px;
   height: 36px;
   cursor: pointer;
 }
 nav .logInBTN:hover {
   color: #fff;
   background: #E97676;
+}
+@media only screen and (max-width: 992px) {
+  nav {
+    display: flex;
+    max-width: 992px;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    max-width: 600px;
+    justify-content: space-evenly;
+  }
 }
 .footer {
   margin: auto;

@@ -3,22 +3,17 @@ nav{
 display: flex;
     justify-content: flex-end;
     height: 100px;
-    width: 100%;
-    //background-color: 0, 0, 0, 1;
-    // border: solid red 3px;
-
-    @media only screen and (max-width: 700px){
-        display: flex;
-        width: 100%;
-    }
+    max-width: 1440px;
 
     ul {
         display: flex;
+        width: 500px;
         align-items: center;
+
     }
 
     li {
-        width: 100px;
+        flex: 1 1 200px;;
     }
 
     ul li a:hover{
@@ -30,8 +25,7 @@ display: flex;
         color: white;
         font-family: 'Roboto', sans-serif;
         font-size: 1.4rem;
-        width: 200px;
-        margin-right: 20px;
+
     }
 
     
@@ -42,7 +36,7 @@ display: flex;
         font-size: 1.4rem;
         color: #E97676;
         border: none;
-        width: 105px;
+        width: 140px;
         height: 36px;
         cursor: pointer;
     }
@@ -52,6 +46,18 @@ display: flex;
         background: #E97676;
     }
 
+    @media only screen and (max-width: 992px){
+        display: flex;
+        max-width: 992px;
+        justify-content: space-evenly;
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: flex;
+        max-width: 600px;
+        justify-content: space-evenly;
+    }
 
 
 }
