@@ -67,16 +67,59 @@ header {
 
   @media only screen and (max-width: 600px) {
 
-    Header{
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    height: 500px;
+    margin-top: 0 auto;
+    
+
+    
+    .header_content{
       display: flex;
+      margin-top: 0;
+      order: -1;
     }
+
+    nav{
+      order: 2;
+    }
+
+    .header_content h1{
+      border: solid goldenrod 2px;
+      font-size: 4rem;
+    }
+
+    .homePageImage{
+      background: none;
+    }
+
+
+    // .homePageImage{
+
+    // }
+
+    // .header_content{
+    //   margin: 0 auto;
+    // }
 
     // .header_content h1{
     //   order: 1;
+    //   height: 100px;
+    // }
+
+
+
+    // .homePageImage{
+    //   order:3
+    // }
+
+    // .header_content h2{
+    //   order: 5;
     // }
 
     // nav{
-    //   order: 2;
+    //   order: 4;
     // }
 
   }
