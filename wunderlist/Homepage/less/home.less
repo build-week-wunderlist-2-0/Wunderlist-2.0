@@ -2,6 +2,11 @@
 
 .homePageImage {
   background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
+
+  // @media only screen and (max-width: 600px) {
+  //   margin-top: 100px;
+  // }
+
 }
 
 .headerTitle {
@@ -101,7 +106,6 @@
 
 .carousel {
   display: flex;
-
   margin-top: 50px;
   margin-bottom: 50px;
 
@@ -110,4 +114,53 @@
 .carousel img {
   width: 350px;
   height: 250px;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .featureInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid 2px red;
+    
+
+    
+
+}
+
+  .featInfo{
+    width: 300px;
+    flex: 1 1 300px;
+  }
+
+  // .featureIcons{
+  //   flex-direction: column;
+  //   flex-wrap: wrap;
+  //   width: 300px;
+  // }
+
+  .centerIMG{
+    display: none;
+  }
+
+  .carousel{
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+
+}
+
+
+@media only screen and (max-width: 710px) {
+  
+  .carousel{
+    display: none;
+  }
 }

@@ -173,19 +173,58 @@ header .logInBTN2:hover {
   color: #E97676;
   background-color: #fff;
 }
+@media only screen and (max-width: 992px) {
+  header .header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    height: 500px;
+    margin-top: 0 auto;
+  }
+  header .header_content {
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+  }
+  header .header_content h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+  }
+  header .header_content h2 {
+    font-size: 1.5rem;
+    font-weight: 300px;
+    padding: 0;
+    height: 64px;
+  }
+  header .header_content button {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    width: 238px;
+    height: 33px;
+  }
+}
 nav {
   display: flex;
   justify-content: flex-end;
   height: 100px;
-  width: 100%;
-  background-color: 0, 0, 0, 1;
+  max-width: 1440px;
 }
 nav ul {
   display: flex;
+  width: 500px;
   align-items: center;
 }
 nav li {
-  width: 100px;
+  flex: 1 1 200px;
 }
 nav ul li a:hover {
   color: #E97676;
@@ -195,8 +234,6 @@ nav a {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
-  width: 200px;
-  margin-right: 20px;
 }
 nav .logInBTN {
   margin-right: 2%;
@@ -204,13 +241,27 @@ nav .logInBTN {
   font-size: 1.4rem;
   color: #E97676;
   border: none;
-  width: 105px;
+  width: 140px;
   height: 36px;
   cursor: pointer;
 }
 nav .logInBTN:hover {
   color: #fff;
   background: #E97676;
+}
+@media only screen and (max-width: 992px) {
+  nav {
+    display: flex;
+    max-width: 992px;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    max-width: 600px;
+    justify-content: space-evenly;
+  }
 }
 .footer {
   margin: auto;
@@ -222,7 +273,7 @@ nav .logInBTN:hover {
   height: 550px;
 }
 .footer h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -260,16 +311,17 @@ nav .logInBTN:hover {
 }
 .footer .footerBTN {
   display: flex;
-  width: 66%;
+  flex: 1 1 200px;
+  width: 100%;
   justify-content: space-evenly;
   margin-top: 30px;
 }
 .footer .footerBTN button {
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   background-color: #E97676;
-  width: 350px;
+  width: 243px;
   height: 43px;
   border: none;
   cursor: pointer;
@@ -311,12 +363,13 @@ nav .logInBTN:hover {
 }
 .footer .email {
   display: flex;
-  width: 66%;
+  width: 100%;
   justify-content: space-evenly;
   margin-bottom: 6px;
+  flex: 1 1 200px;
 }
 .footer .email input {
-  width: 322px;
+  width: 280px;
   height: 54px;
   border: none;
   border-radius: 10px;
@@ -340,10 +393,46 @@ nav .logInBTN:hover {
 }
 .footer .iconRow {
   display: flex;
-  width: 50%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-evenly;
   margin-top: 10px;
   opacity: 0.3;
+  flex: 1 1 75px;
+}
+@media only screen and (max-width: 600px) {
+  .footer .joinUs {
+    height: 60px;
+  }
+  .footer .joinUsToday h1 {
+    font-size: 3rem;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  .footer .joinUsToday p {
+    font-size: 1.5rem;
+    max-width: 500px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .footer .footerBTN {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+  .footer .yellowFooter {
+    height: 250px;
+    margin: 0;
+  }
+  .footer .email {
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 163px;
+  }
 }
 .homePageImage {
   background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
@@ -397,7 +486,6 @@ nav .logInBTN:hover {
 .centerIMG img {
   height: 300px;
   max-width: 1440px;
-  margin: auto;
 }
 .glance {
   display: flex;
@@ -435,51 +523,121 @@ nav .logInBTN:hover {
   width: 350px;
   height: 250px;
 }
-.aboutPageImage {
-  background-image: url(../Img/About_Page_Images/action-adult-asphalt-343469.jpg);
+@media only screen and (max-width: 992px) {
+  .featureInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid 2px red;
+  }
+  .featInfo {
+    width: 300px;
+    flex: 1 1 300px;
+  }
+  .centerIMG {
+    display: none;
+  }
+  .carousel {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
-.aboutWunderList {
-  max-width: 100%;
-  margin: auto;
+@media only screen and (max-width: 710px) {
+  .carousel {
+    display: none;
+  }
+}
+.homePageImage {
+  background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
+}
+.headerTitle {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180px;
-  width: 1440px;
-  font-size: 4rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-.centerContent {
-  display: flex;
-  flex-wrap: wrap;
+  height: 144px;
   max-width: 1440px;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: Bold;
+  color: #E97676;
+}
+.featureIcons {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1440px;
+  height: 100px;
+}
+.featureIcons img {
+  width: 80px;
+  height: 80px;
+}
+.featureInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200px;
+  max-width: 1440px;
+}
+.featureInfo h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+}
+.featureInfo p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  height: 175px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin: 20px;
+}
+.centerIMG img {
+  height: 300px;
+  max-width: 1440px;
+}
+.glance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 144px;
+  max-width: 1440px;
+  margin-top: 45px;
+}
+.glance h1 {
   width: 100%;
-  justify-content: space-between;
-  margin-bottom: 40px;
-
-}
-.centerContent img {
-  width: 100%;
-}
-.contentArea,
-.image1,
-.image2,
-.image3 {
-  width: 50%;
-}
-.centerContent p {
-  padding: 3% 20%;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+}
+.glance p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
   line-height: 35px;
 }
-.contentArea p {
+.carousel {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.carousel img {
+  width: 350px;
+  height: 250px;
 }
 .contactPageImage {
   background-image: url(../Img/Contact_Page_Images/antique-black-communication-821754.jpg);
