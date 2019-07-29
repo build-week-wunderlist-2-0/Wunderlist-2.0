@@ -426,6 +426,7 @@ nav .logInBTN:hover {
   }
   .footer .yellowFooter {
     height: 250px;
+    margin: 0;
   }
   .footer .email {
     flex-direction: column;
@@ -534,6 +535,18 @@ nav .logInBTN:hover {
     flex: 1 1 300px;
   }
   .centerIMG {
+    display: none;
+  }
+  .carousel {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .carousel {
     display: none;
   }
 }
