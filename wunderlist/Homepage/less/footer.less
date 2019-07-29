@@ -10,7 +10,7 @@
   //border: solid purple 10px;
 
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -55,7 +55,8 @@
 
   .footerBTN {
     display: flex;
-    width: 66%;
+    flex: 1 1 200px;
+    width: 100%;
     //border: solid blue 3px;
     justify-content: space-evenly;
     margin-top: 30px;
@@ -65,10 +66,10 @@
   .footerBTN button {
 
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     background-color: #E97676;
-    width: 350px;
+    width: 243px;
     height: 43px;
     border: none;
     cursor: pointer;
@@ -118,15 +119,16 @@
 
   .email {
     display: flex;
-    width: 66%;
+    width: 100%;
     //border: solid blue 3px;
     justify-content: space-evenly;
     margin-bottom: 6px;
+    flex: 1 1 200px;
 
   }
 
   .email input {
-    width: 322px;
+    width: 280px;
     height: 54px;
     border: none;
     border-radius: 10px;
@@ -155,12 +157,57 @@
 
   .iconRow {
     display: flex;
-    width: 50%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-evenly;
     margin-top: 10px;
     opacity: .3;
+    flex: 1 1 75px;
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .joinUs{
+      height: 60px;
+    }
+
+    .joinUsToday h1{
+      font-size: 3rem;
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      letter-spacing: 3px;
+    }
+
+    .joinUsToday p{
+      font-size: 1.5rem;
+      max-width: 500px;
+      letter-spacing: 2px;
+      line-height: 35px;
+      text-align: center;
+    }
+
+
+    .footerBTN{
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 0;
+    }
+
+    .yellowFooter{
+      height: 250px;
+    }
+
+    .email {
+      // display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1 1 163px;
+
   }
 
 
-
+}
 }

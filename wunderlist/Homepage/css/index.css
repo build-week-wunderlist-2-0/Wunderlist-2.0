@@ -273,7 +273,7 @@ nav .logInBTN:hover {
   height: 550px;
 }
 .footer h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -311,16 +311,17 @@ nav .logInBTN:hover {
 }
 .footer .footerBTN {
   display: flex;
-  width: 66%;
+  flex: 1 1 200px;
+  width: 100%;
   justify-content: space-evenly;
   margin-top: 30px;
 }
 .footer .footerBTN button {
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   background-color: #E97676;
-  width: 350px;
+  width: 243px;
   height: 43px;
   border: none;
   cursor: pointer;
@@ -362,12 +363,13 @@ nav .logInBTN:hover {
 }
 .footer .email {
   display: flex;
-  width: 66%;
+  width: 100%;
   justify-content: space-evenly;
   margin-bottom: 6px;
+  flex: 1 1 200px;
 }
 .footer .email input {
-  width: 322px;
+  width: 280px;
   height: 54px;
   border: none;
   border-radius: 10px;
@@ -391,10 +393,45 @@ nav .logInBTN:hover {
 }
 .footer .iconRow {
   display: flex;
-  width: 50%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-evenly;
   margin-top: 10px;
   opacity: 0.3;
+  flex: 1 1 75px;
+}
+@media only screen and (max-width: 600px) {
+  .footer .joinUs {
+    height: 60px;
+  }
+  .footer .joinUsToday h1 {
+    font-size: 3rem;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  .footer .joinUsToday p {
+    font-size: 1.5rem;
+    max-width: 500px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .footer .footerBTN {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+  .footer .yellowFooter {
+    height: 250px;
+  }
+  .footer .email {
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 163px;
+  }
 }
 .homePageImage {
   background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
@@ -484,6 +521,19 @@ nav .logInBTN:hover {
 .carousel img {
   width: 350px;
   height: 250px;
+}
+@media only screen and (max-width: 992px) {
+  .featureInfo {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 500px;
+  }
+  .featureIcons {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+  }
 }
 .homePageImage {
   background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
