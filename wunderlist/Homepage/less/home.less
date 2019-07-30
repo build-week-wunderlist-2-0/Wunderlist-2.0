@@ -1,11 +1,7 @@
 // Home page 
 
 .homePageImage {
-  background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
-
-  // @media only screen and (max-width: 600px) {
-  //   margin-top: 100px;
-  // }
+  //background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
 
 }
 
@@ -30,51 +26,61 @@
 
 }
 
-.featureIcons img {
-  width: 80px;
-  height: 80px;
-}
+// .featureIcons img {
+//   width: 80px;
+//   height: 80px;
+// }
 
-.featureInfo {
+.featureInfo{
+
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 200px;
-  max-width: 1440px;
+
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: flex-start;
+  // height: 300px;
+  // max-width: 1440px;
   // border: solid red 3px;
   // font-family: 'Roboto', sans-serif;
 
 }
 
-.featureInfo h3 {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 4px;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 5px;
+// .featInfo{
+//   display: flex;
+// }
 
-}
 
-.featureInfo p {
-  // border: solid goldenrod 2px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  height: 175px;
-  line-height: 20px;
-  text-align: center;
-  margin-top: 20px;
-  margin: 20px;
+// .featInfo h3 {
+//   flex: 1;
+//   text-align: center;
+//   font-size: 1rem;
+//   font-weight: bold;
+//   letter-spacing: 4px;
+//   font-family: 'Roboto', sans-serif;
+//   margin-bottom: 5px;
 
-}
+// }
+// .featInfo p {
+//   // border: solid goldenrod 2px;
+//   font-family: 'Roboto', sans-serif;
+//   font-size: 1rem;
+//   // height: 175px;
+//   line-height: 20px;
+//   text-align: center;
+//   margin-top: 20px;
+//   margin: 20px;
+//   // width: 183px;
 
-.centerIMG img {
+// }
+
+.centerIMG{
+  display: flex;
+  justify-content: center;
   height: 300px;
   max-width: 1440px;
 }
 
 .glance {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,20 +124,19 @@
 
 @media only screen and (max-width: 992px) {
 
-  .featureInfo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: solid 2px red;
-    
+//   .featureInfo {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     height: 376px;
+//     border: solid 2px red;
+  
 
-    
-
-}
+// }
 
   .featInfo{
     width: 300px;
     flex: 1 1 300px;
+    height: 150px;
   }
 
   // .featureIcons{
@@ -158,9 +163,3 @@
 }
 
 
-@media only screen and (max-width: 710px) {
-  
-  .carousel{
-    display: none;
-  }
-}
