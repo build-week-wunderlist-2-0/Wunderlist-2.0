@@ -455,6 +455,11 @@ nav .logInBTN:hover {
   max-width: 1440px;
   height: 100px;
 }
+@media only screen and (max-width: 750px) {
+  .featureIcons {
+    display: none;
+  }
+}
 .featureInfo {
   display: flex;
 }
