@@ -434,6 +434,9 @@ nav .logInBTN:hover {
     flex: 1 1 163px;
   }
 }
+.homePageImage {
+  background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
+}
 .headerTitle {
   display: flex;
   justify-content: center;
@@ -624,6 +627,11 @@ nav .logInBTN:hover {
   color: black;
   text-align: center;
 }
+@media only screen and (max-width: 650px) {
+  .ContactCenterContent h1 {
+    font-size: 2rem;
+  }
+}
 .ContactCenterContent p {
   text-align: center;
   font-size: 1rem;
@@ -633,6 +641,11 @@ nav .logInBTN:hover {
   margin-bottom: 5px;
   line-height: 35px;
 }
+@media only screen and (max-width: 650px) {
+  .ContactCenterContent p {
+    font-size: 0.75rem;
+  }
+}
 .contactForm {
   display: flex;
   height: 100px;
@@ -640,6 +653,12 @@ nav .logInBTN:hover {
   background-color: #F0BC5E;
   justify-content: space-evenly;
   align-items: center;
+}
+@media only screen and (max-width: 650px) {
+  .contactForm {
+    flex-direction: column;
+    height: 125px;
+  }
 }
 .contactForm input {
   width: 400px;
@@ -650,6 +669,16 @@ nav .logInBTN:hover {
   font-size: 2rem;
   color: #C2C2C2;
 }
+@media only screen and (max-width: 1050px) {
+  .contactForm input {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .contactForm input {
+    width: 500px;
+  }
+}
 .contactMessage {
   display: flex;
   height: 400px;
@@ -657,6 +686,16 @@ nav .logInBTN:hover {
   background-color: #F0BC5E;
   justify-content: space-evenly;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 1050px) {
+  .contactMessage {
+    height: 315px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .contactMessage {
+    height: 250px;
+  }
 }
 .contactMessage input {
   width: 1027px;
@@ -666,6 +705,18 @@ nav .logInBTN:hover {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   color: #C2C2C2;
+}
+@media only screen and (max-width: 1050px) {
+  .contactMessage input {
+    width: 729px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .contactMessage input {
+    width: 500px;
+    height: 235px;
+  }
 }
 .blogPageImage {
   background-image: url(../Img/Blog_Images/antique-blog-blogger-1898254.jpg);
