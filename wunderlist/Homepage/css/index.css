@@ -434,9 +434,6 @@ nav .logInBTN:hover {
     flex: 1 1 163px;
   }
 }
-.homePageImage {
-  background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
-}
 .headerTitle {
   display: flex;
   justify-content: center;
@@ -455,35 +452,12 @@ nav .logInBTN:hover {
   max-width: 1440px;
   height: 100px;
 }
-.featureIcons img {
-  width: 80px;
-  height: 80px;
-}
 .featureInfo {
   display: flex;
+}
+.centerIMG {
+  display: flex;
   justify-content: center;
-  align-items: flex-start;
-  height: 200px;
-  max-width: 1440px;
-}
-.featureInfo h3 {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 4px;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 5px;
-}
-.featureInfo p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  height: 175px;
-  line-height: 20px;
-  text-align: center;
-  margin-top: 20px;
-  margin: 20px;
-}
-.centerIMG img {
   height: 300px;
   max-width: 1440px;
 }
@@ -524,15 +498,10 @@ nav .logInBTN:hover {
   height: 250px;
 }
 @media only screen and (max-width: 992px) {
-  .featureInfo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: solid 2px red;
-  }
   .featInfo {
     width: 300px;
     flex: 1 1 300px;
+    height: 150px;
   }
   .centerIMG {
     display: none;
@@ -543,11 +512,6 @@ nav .logInBTN:hover {
     height: 600px;
     justify-content: space-around;
     align-items: center;
-  }
-}
-@media only screen and (max-width: 710px) {
-  .carousel {
-    display: none;
   }
 }
 .homePageImage {
