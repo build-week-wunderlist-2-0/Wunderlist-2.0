@@ -38,9 +38,10 @@
 
 .featureIcons{
   margin: auto;
+  max-width: 1440px;
   display: flex;
   height: 220px;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 
   @media only screen and (max-width: 998px) {
     height: 440px;
@@ -52,7 +53,11 @@
   }
 
   @media only screen and (max-width: 650px) {
-    height: 1300px;
+    height: 621px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: 1000px;
   }
 
 
@@ -131,12 +136,12 @@
 
   @media only screen and (max-width: 900px) {
     max-width: 800px;
-    height: 300px;
+    // height: 300px;
   }
 
   @media only screen and (max-width: 750px) {
     max-width: 650px;
-    height: 400px;
+    height: 225px;
   }
 }
 
@@ -164,6 +169,7 @@
   font-family: 'Roboto', sans-serif;
   margin-bottom: 5px;
   line-height: 20px;
+  width: 80%;
 
   @media only screen and (max-width: 750px) {
     font-size: .9rem;
@@ -173,9 +179,31 @@
 // carousel Styling
 
 .carousel {
+  margin: auto;
   display: flex;
+  justify-content: center;
+  //flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 50px;
+
+  @media only screen and (max-width: 998px) {
+    flex-wrap: wrap;
+    flex-basis: 350px;
+    margin-top: 20px;
+    height: 540px;
+    justify-content: space-evenly;
+    width: 758px;
+  }
+
+  @media only screen and (max-width: 750px) {
+    flex-basis: 300px;
+    height: 432px;
+    width: 650px;
+  }
+
+  @media only screen and (max-width: 650px) {
+    display: none;
+}
 
 }
 
@@ -183,9 +211,11 @@
   width: 350px;
   height: 250px;
 
-  // @media only screen and (max-width: 900px) {
-  //   display: none;
-  // }
+  @media only screen and (max-width: 750px) {
+    width: 300px;
+    height: 200px;
+  }
+
 }
 
 

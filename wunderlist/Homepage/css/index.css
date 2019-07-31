@@ -130,9 +130,28 @@ header {
   margin: auto;
   width: 100%;
   height: 581px;
-  background-size: 100% auto;
   background-size: cover;
   max-width: 1440px;
+}
+@media only screen and (max-width: 1189px) {
+  header {
+    height: 481px;
+  }
+}
+@media only screen and (max-width: 983px) {
+  header {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  header {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  header {
+    height: 300px;
+  }
 }
 header .header_content {
   display: flex;
@@ -140,6 +159,18 @@ header .header_content {
   width: 100%;
   height: 250px;
   margin-top: 50px;
+}
+@media only screen and (max-width: 992px) {
+  header .header_content {
+    align-items: center;
+    height: 187px;
+  }
+}
+@media only screen and (max-width: 715px) {
+  header .header_content {
+    height: 150px;
+    margin-top: 0;
+  }
 }
 header .header_content h1 {
   font-size: 5.5rem;
@@ -150,6 +181,23 @@ header .header_content h1 {
   margin-left: 3%;
   height: 100px;
 }
+@media only screen and (max-width: 992px) {
+  header .header_content h1 {
+    margin: auto;
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 710px) {
+  header .header_content h1 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .header_content h1 {
+    font-size: 3rem;
+    height: 50px;
+  }
+}
 header .header_content h2 {
   font-size: 2rem;
   color: #fff;
@@ -158,6 +206,25 @@ header .header_content h2 {
   margin-left: 7%;
   height: 100px;
   padding-top: 28px;
+}
+@media only screen and (max-width: 992px) {
+  header .header_content h2 {
+    margin: auto;
+    font-size: 1.7rem;
+    padding: 0;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  header .header_content h2 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .header_content h2 {
+    font-size: 1.2rem;
+    height: 28px;
+  }
 }
 header .header_content button {
   margin-left: 12%;
@@ -170,60 +237,57 @@ header .header_content button {
   border: none;
   cursor: pointer;
 }
-header .logInBTN2:hover {
-  color: #E97676;
-  background-color: #fff;
-}
-@media only screen and (max-width: 992px) {
-  header .header_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media only screen and (max-width: 998px) {
+  header .header_content button {
+    margin: auto;
+    font-size: 1.5rem;
+    width: 240px;
+    height: 36px;
   }
 }
 @media only screen and (max-width: 600px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    background-position: center;
-    height: 500px;
-    margin-top: 0 auto;
-  }
-  header .header_content {
-    display: flex;
-    margin-top: 0;
-    align-items: center;
-  }
-  header .header_content h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 4rem;
-    margin: 0;
-  }
-  header .header_content h2 {
-    font-size: 1.5rem;
-    font-weight: 300px;
-    padding: 0;
-    height: 64px;
-    text-align: center;
-  }
   header .header_content button {
-    margin: 0 auto;
-    font-size: 1.5rem;
-    width: 238px;
-    height: 33px;
+    margin: auto;
+    font-size: 1.2rem;
+    width: 188px;
+    height: 25px;
   }
+}
+header .logInBTN2:hover {
+  color: #E97676;
+  background-color: #fff;
 }
 nav {
   display: flex;
   justify-content: flex-end;
   height: 100px;
   max-width: 1440px;
+  margin-right: 2%;
+}
+@media only screen and (max-width: 992px) {
+  nav {
+    display: flex;
+    max-width: 992px;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    max-width: 600px;
+    justify-content: space-evenly;
+  }
 }
 nav ul {
   display: flex;
   width: 500px;
   align-items: center;
+  margin-right: 2%;
+}
+@media only screen and (max-width: 600px) {
+  nav ul {
+    margin-right: 0;
+  }
 }
 nav li {
   flex: 1 1 200px;
@@ -251,20 +315,6 @@ nav .logInBTN:hover {
   color: #fff;
   background: #E97676;
 }
-@media only screen and (max-width: 992px) {
-  nav {
-    display: flex;
-    max-width: 992px;
-    justify-content: space-evenly;
-  }
-}
-@media only screen and (max-width: 600px) {
-  nav {
-    display: flex;
-    max-width: 600px;
-    justify-content: space-evenly;
-  }
-}
 .footer {
   margin: auto;
   display: flex;
@@ -274,48 +324,42 @@ nav .logInBTN:hover {
   max-width: 1440px;
   height: 550px;
 }
-.footer h1 {
-  font-size: 4rem;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
-.footer h2 {
-  font-size: 3rem;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  letter-spacing: 3px;
-}
-.footer h3 {
-  font-size: 3rem;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-}
 .footer .joinUsToday {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 }
-.footer .joinUs {
-  height: 80px;
+.footer .joinUsToday h1 {
+  font-size: 4rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+@media only screen and (max-width: 998px) {
+  .footer .joinUsToday h1 {
+    font-size: 3.5rem;
+  }
 }
 .footer .joinUsToday p {
-  width: 532px;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: black;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 5px;
-  line-height: 41px;
-  font-weight: 300px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  max-width: 800px;
+  text-align: center;
+}
+@media only screen and (max-width: 998px) {
+  .footer .joinUsToday p {
+    font-size: 1.8rem;
+    max-width: 500px;
+  }
 }
 .footer .footerBTN {
   display: flex;
-  flex: 1 1 200px;
-  width: 100%;
+  width: 750px;
   justify-content: space-evenly;
   margin-top: 30px;
 }
@@ -329,9 +373,25 @@ nav .logInBTN:hover {
   border: none;
   cursor: pointer;
 }
+@media only screen and (max-width: 750px) {
+  .footer .footerBTN button {
+    max-width: 500px;
+    font-size: 1rem;
+  }
+}
 .footer .footerBTN button:hover {
   color: #E97676;
   background-color: #fff;
+}
+.footer h3 {
+  font-size: 3rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.footer .joinUs {
+  height: 80px;
 }
 .footer .yellowFooter {
   display: flex;
@@ -402,41 +462,6 @@ nav .logInBTN:hover {
   opacity: 0.3;
   flex: 1 1 75px;
 }
-@media only screen and (max-width: 600px) {
-  .footer .joinUs {
-    height: 60px;
-  }
-  .footer .joinUsToday h1 {
-    font-size: 3rem;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    letter-spacing: 3px;
-  }
-  .footer .joinUsToday p {
-    font-size: 1.5rem;
-    max-width: 500px;
-    letter-spacing: 2px;
-    line-height: 35px;
-    text-align: center;
-  }
-  .footer .footerBTN {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 0;
-  }
-  .footer .yellowFooter {
-    height: 250px;
-    margin: 0;
-  }
-  .footer .email {
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 163px;
-  }
-}
 .homePageImage {
   background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
 }
@@ -471,9 +496,10 @@ nav .logInBTN:hover {
 }
 .featureIcons {
   margin: auto;
+  max-width: 1440px;
   display: flex;
   height: 220px;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 @media only screen and (max-width: 998px) {
   .featureIcons {
@@ -488,7 +514,12 @@ nav .logInBTN:hover {
 }
 @media only screen and (max-width: 650px) {
   .featureIcons {
-    height: 1300px;
+    height: 621px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .featureIcons {
+    height: 1000px;
   }
 }
 .featInfo {
@@ -550,13 +581,12 @@ nav .logInBTN:hover {
 @media only screen and (max-width: 900px) {
   .glance {
     max-width: 800px;
-    height: 300px;
   }
 }
 @media only screen and (max-width: 750px) {
   .glance {
     max-width: 650px;
-    height: 400px;
+    height: 225px;
   }
 }
 .glance h1 {
@@ -582,6 +612,7 @@ nav .logInBTN:hover {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 5px;
   line-height: 20px;
+  width: 80%;
 }
 @media only screen and (max-width: 750px) {
   .glance p {
@@ -589,13 +620,43 @@ nav .logInBTN:hover {
   }
 }
 .carousel {
+  margin: auto;
   display: flex;
+  justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 998px) {
+  .carousel {
+    flex-wrap: wrap;
+    flex-basis: 350px;
+    margin-top: 20px;
+    height: 540px;
+    justify-content: space-evenly;
+    width: 758px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .carousel {
+    flex-basis: 300px;
+    height: 432px;
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .carousel {
+    display: none;
+  }
 }
 .carousel img {
   width: 350px;
   height: 250px;
+}
+@media only screen and (max-width: 750px) {
+  .carousel img {
+    width: 300px;
+    height: 200px;
+  }
 }
 .aboutPageImage {
   background-image: url(../Img/About_Page_Images/action-adult-asphalt-343469.jpg);
@@ -603,6 +664,7 @@ nav .logInBTN:hover {
 .aboutWunderList {
   max-width: 100%;
   margin: auto;
+  padding: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -620,6 +682,7 @@ nav .logInBTN:hover {
   }
 }
 .centerContent {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   max-width: 1440px;

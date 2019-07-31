@@ -9,21 +9,72 @@
   height: 550px;
   //border: solid purple 10px;
 
-  h1 {
+  .joinUsToday {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    //border: solid red 3px;
+    align-items: center;
+  }
+
+  .joinUsToday h1 {
     font-size: 4rem;
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     letter-spacing: 3px;
+
+    @media only screen and (max-width: 998px) {
+      font-size: 3.5rem;
+    }
   }
 
-  h2 {
-    font-size: 3rem;
+  .joinUsToday p {
+    font-size: 2.5rem;
     color: black;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 3px;
+    max-width: 800px;
+    text-align: center;
+
+    @media only screen and (max-width: 998px) {
+      font-size: 1.8rem;
+      max-width: 500px;
+    }
   }
+
+  .footerBTN {
+    display: flex;
+    width: 750px;
+    //border: solid blue 3px;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+  }
+
+  .footerBTN button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #E97676;
+    width: 243px;
+    height: 43px;
+    border: none;
+    cursor: pointer;
+
+    @media only screen and (max-width: 750px) {
+      max-width: 500px;
+      font-size: 1rem;
+    }
+  }
+
+  .footerBTN button:hover {
+    color: #E97676;
+    background-color: #fff;
+  }
+
+
 
   h3 {
     font-size: 3rem;
@@ -33,52 +84,10 @@
     letter-spacing: 3px;
   }
 
-  .joinUsToday {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    //border: solid red 3px;
-    align-items: center;
-  }
+
 
   .joinUs {
     height: 80px;
-  }
-
-  .joinUsToday p {
-    width: 532px;
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 5px;
-    line-height: 41px;
-    font-weight: 300px;
-  }
-
-  .footerBTN {
-    display: flex;
-    flex: 1 1 200px;
-    width: 100%;
-    //border: solid blue 3px;
-    justify-content: space-evenly;
-    margin-top: 30px;
-
-  }
-
-  .footerBTN button {
-
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    color: #fff;
-    background-color: #E97676;
-    width: 243px;
-    height: 43px;
-    border: none;
-    cursor: pointer;
-  }
-
-  .footerBTN button:hover {
-    color: #E97676;
-    background-color: #fff;
   }
 
   .yellowFooter {
@@ -166,52 +175,4 @@
     
   }
 
-  @media only screen and (max-width: 600px) {
 
-    
-
-    .joinUs{
-      height: 60px;
-    }
-
-    .joinUsToday h1{
-      font-size: 3rem;
-      color: black;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      letter-spacing: 3px;
-    }
-
-    .joinUsToday p{
-      font-size: 1.5rem;
-      max-width: 500px;
-      letter-spacing: 2px;
-      line-height: 35px;
-      text-align: center;
-    }
-
-
-    .footerBTN{
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-around;
-      margin-top: 0;
-    }
-
-    .yellowFooter{
-      height: 250px;
-      margin: 0;
-    }
-
-    .email {
-      // display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 1 1 163px;
-
-  }
-
-
-}
-}
