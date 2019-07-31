@@ -127,6 +127,7 @@ table {
   border-spacing: 0;
 }
 header {
+  margin: auto;
   width: 100%;
   height: 581px;
   background-size: 100% auto;
@@ -204,6 +205,7 @@ header .logInBTN2:hover {
     font-weight: 300px;
     padding: 0;
     height: 64px;
+    text-align: center;
   }
   header .header_content button {
     margin: 0 auto;
@@ -300,7 +302,7 @@ nav .logInBTN:hover {
   align-items: center;
 }
 .footer .joinUs {
-  height: 100px;
+  height: 80px;
 }
 .footer .joinUsToday p {
   width: 532px;
@@ -308,6 +310,7 @@ nav .logInBTN:hover {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 5px;
   line-height: 41px;
+  font-weight: 300px;
 }
 .footer .footerBTN {
   display: flex;
@@ -438,6 +441,7 @@ nav .logInBTN:hover {
   background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
 }
 .headerTitle {
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -449,27 +453,92 @@ nav .logInBTN:hover {
   font-weight: Bold;
   color: #E97676;
 }
-.featureIcons {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1440px;
-  height: 100px;
+.headerTitle p {
+  width: 684px;
 }
 @media only screen and (max-width: 750px) {
-  .featureIcons {
-    display: none;
+  .headerTitle p {
+    font-size: 2.5rem;
+    width: 508px;
   }
 }
-.featureInfo {
+@media only screen and (max-width: 550px) {
+  .headerTitle p {
+    font-size: 2rem;
+    width: 508px;
+    text-align: center;
+  }
+}
+.featureIcons {
+  margin: auto;
   display: flex;
+  height: 220px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 998px) {
+  .featureIcons {
+    height: 440px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .featureIcons {
+    height: 660px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .featureIcons {
+    height: 1300px;
+  }
+}
+.featInfo {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media only screen and (max-width: 998px) {
+  .featInfo {
+    flex: 1 1 300px;
+    height: 200px;
+  }
+}
+.featInfo img {
+  width: 80px;
+  height: 80px;
+}
+.featInfo h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+}
+.featInfo p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  width: 200px;
+  font-weight: 300;
+  line-height: 20px;
 }
 .centerIMG {
   display: flex;
-  justify-content: center;
-  height: 300px;
+}
+@media only screen and (max-width: 998px) {
+  .centerIMG {
+    display: none;
+  }
+}
+.centerIMG img {
+  margin: auto;
+  height: 254px;
   max-width: 1440px;
 }
 .glance {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -477,6 +546,18 @@ nav .logInBTN:hover {
   height: 144px;
   max-width: 1440px;
   margin-top: 45px;
+}
+@media only screen and (max-width: 900px) {
+  .glance {
+    max-width: 800px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .glance {
+    max-width: 650px;
+    height: 400px;
+  }
 }
 .glance h1 {
   width: 100%;
@@ -486,15 +567,26 @@ nav .logInBTN:hover {
   font-weight: 300;
   color: black;
   text-align: center;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 750px) {
+  .glance h1 {
+    font-size: 2.2rem;
+  }
 }
 .glance p {
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 5px;
-  line-height: 35px;
+  line-height: 20px;
+}
+@media only screen and (max-width: 750px) {
+  .glance p {
+    font-size: 0.9rem;
+  }
 }
 .carousel {
   display: flex;
@@ -504,23 +596,6 @@ nav .logInBTN:hover {
 .carousel img {
   width: 350px;
   height: 250px;
-}
-@media only screen and (max-width: 992px) {
-  .featInfo {
-    width: 300px;
-    flex: 1 1 300px;
-    height: 150px;
-  }
-  .centerIMG {
-    display: none;
-  }
-  .carousel {
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 600px;
-    justify-content: space-around;
-    align-items: center;
-  }
 }
 .aboutPageImage {
   background-image: url(../Img/About_Page_Images/action-adult-asphalt-343469.jpg);
@@ -598,6 +673,7 @@ nav .logInBTN:hover {
   background-image: url(../Img/Contact_Page_Images/antique-black-communication-821754.jpg);
 }
 .ContactCenterContent {
+  margin: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -635,6 +711,7 @@ nav .logInBTN:hover {
   }
 }
 .contactForm {
+  margin: auto;
   display: flex;
   height: 100px;
   max-width: 1440px;
@@ -668,6 +745,7 @@ nav .logInBTN:hover {
   }
 }
 .contactMessage {
+  margin: auto;
   display: flex;
   height: 400px;
   max-width: 1440px;
@@ -710,18 +788,34 @@ nav .logInBTN:hover {
   background-image: url(../Img/Blog_Images/antique-blog-blogger-1898254.jpg);
 }
 .blogEntry {
+  margin: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-content: space-between;
   flex-wrap: wrap;
-  height: 450px;
+  height: 850px;
   max-width: 1440px;
   margin-top: 40px;
   margin-bottom: 60px;
 }
-.blogEntryText {
-  width: 692px;
+.blogEntryText1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 391px;
+}
+@media only screen and (max-width: 992px) {
+  .blogEntryText1 {
+    flex-direction: row;
+  }
+}
+.blogEntryText2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 391px;
 }
 .blogEntry h1 {
   text-align: center;
@@ -730,17 +824,26 @@ nav .logInBTN:hover {
   letter-spacing: 3px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
+  margin-top: 36px;
+}
+.blogEntry h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
 }
 .blogEntry p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   margin-top: 50px;
 }
 .blogEntry img {
-  width: 692px;
-  height: 442px;
+  width: 642px;
+  height: 392px;
   border-radius: 10px;
 }
 .blogEntry button {
