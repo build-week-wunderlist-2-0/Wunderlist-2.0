@@ -205,6 +205,7 @@ header .logInBTN2:hover {
     font-weight: 300px;
     padding: 0;
     height: 64px;
+    text-align: center;
   }
   header .header_content button {
     margin: 0 auto;
@@ -435,95 +436,11 @@ nav .logInBTN:hover {
     flex: 1 1 163px;
   }
 }
-.headerTitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 144px;
-  max-width: 1440px;
-  font-size: 3.5rem;
-  letter-spacing: 3px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: Bold;
-  color: #E97676;
-}
-.featureIcons {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1440px;
-  height: 100px;
-}
-@media only screen and (max-width: 750px) {
-  .featureIcons {
-    display: none;
-  }
-}
-.featureInfo {
-  display: flex;
-}
-.centerIMG {
-  display: flex;
-  justify-content: center;
-  height: 300px;
-  max-width: 1440px;
-}
-.glance {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 144px;
-  max-width: 1440px;
-  margin-top: 45px;
-}
-.glance h1 {
-  width: 100%;
-  font-size: 3.5rem;
-  letter-spacing: 3px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: black;
-  text-align: center;
-}
-.glance p {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 4px;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 5px;
-  line-height: 35px;
-}
-.carousel {
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.carousel img {
-  width: 350px;
-  height: 250px;
-}
-@media only screen and (max-width: 992px) {
-  .featInfo {
-    width: 300px;
-    flex: 1 1 300px;
-    height: 150px;
-  }
-  .centerIMG {
-    display: none;
-  }
-  .carousel {
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 600px;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
 .homePageImage {
   background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
 }
 .headerTitle {
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -535,42 +452,85 @@ nav .logInBTN:hover {
   font-weight: Bold;
   color: #E97676;
 }
-.featureIcons {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1440px;
-  height: 100px;
+.headerTitle p {
+  width: 684px;
 }
-.featureIcons img {
+@media only screen and (max-width: 750px) {
+  .headerTitle p {
+    font-size: 2.5rem;
+    width: 508px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .headerTitle p {
+    font-size: 2rem;
+    width: 508px;
+    text-align: center;
+  }
+}
+.featureIcons {
+  margin: auto;
+  display: flex;
+  height: 220px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 998px) {
+  .featureIcons {
+    height: 440px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .featureIcons {
+    height: 660px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .featureIcons {
+    height: 1300px;
+  }
+}
+.featInfo {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media only screen and (max-width: 998px) {
+  .featInfo {
+    flex: 1 1 300px;
+    height: 200px;
+  }
+}
+.featInfo img {
   width: 80px;
   height: 80px;
 }
-.featureInfo {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 200px;
-  max-width: 1440px;
-}
-.featureInfo h3 {
-  text-align: center;
+.featInfo h3 {
   font-size: 1rem;
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 5px;
 }
-.featureInfo p {
+.featInfo p {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  height: 175px;
-  line-height: 20px;
   text-align: center;
-  margin-top: 20px;
-  margin: 20px;
+}
+.centerIMG {
+  display: flex;
+}
+@media only screen and (max-width: 998px) {
+  .centerIMG {
+    display: none;
+  }
 }
 .centerIMG img {
-  height: 300px;
+  margin: auto;
+  height: 254px;
   max-width: 1440px;
 }
 .glance {
@@ -608,6 +568,78 @@ nav .logInBTN:hover {
 .carousel img {
   width: 350px;
   height: 250px;
+}
+.aboutPageImage {
+  background-image: url(../Img/About_Page_Images/action-adult-asphalt-343469.jpg);
+}
+.aboutWunderList {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  font-size: 4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+@media (max-width: 500px) {
+  .aboutWunderList {
+    padding: 5%;
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+.centerContent {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .centerContent {
+    flex-direction: column;
+  }
+}
+.centerContent img {
+  width: 100%;
+}
+.centerContent .contentArea,
+.centerContent .image1,
+.centerContent .image2,
+.centerContent .image3 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .centerContent .contentArea,
+  .centerContent .image1,
+  .centerContent .image2,
+  .centerContent .image3 {
+    width: 100%;
+    padding: 5%;
+  }
+}
+.centerContent .contentArea p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 35px;
 }
 .contactPageImage {
   background-image: url(../Img/Contact_Page_Images/antique-black-communication-821754.jpg);
@@ -756,11 +788,6 @@ nav .logInBTN:hover {
   flex-wrap: wrap;
   width: 90%;
   height: 391px;
-}
-.blogEntryText1 h1,
-h2,
-p {
-  width: 650px;
 }
 .blogEntry h1 {
   text-align: center;
