@@ -5,11 +5,32 @@ nav{
     justify-content: flex-end;
     height: 100px;
     max-width: 1440px;
+    margin-right: 2%;
+
+    @media only screen and (max-width: 992px){
+        display: flex;
+        max-width: 992px;
+        justify-content: space-evenly;
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: flex;
+        max-width: 600px;
+        justify-content: space-evenly;
+
+
+    }
 
     ul {
         display: flex;
         width: 500px;
         align-items: center;
+        margin-right: 2%;
+
+        @media only screen and (max-width: 600px) {
+            margin-right: 0;
+        }
 
     }
 
@@ -45,21 +66,6 @@ nav{
     .logInBTN:hover{
         color: #fff;
         background: #E97676;
-    }
-
-    @media only screen and (max-width: 992px){
-        display: flex;
-        max-width: 992px;
-        justify-content: space-evenly;
-
-    }
-
-    @media only screen and (max-width: 600px) {
-        display: flex;
-        max-width: 600px;
-        justify-content: space-evenly;
-
-
     }
 
 
