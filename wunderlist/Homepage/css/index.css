@@ -322,7 +322,7 @@ nav .logInBTN:hover {
   align-items: center;
   justify-content: center;
   max-width: 1440px;
-  height: 550px;
+  height: 450px;
 }
 .footer .joinUsToday {
   display: flex;
@@ -357,11 +357,19 @@ nav .logInBTN:hover {
     max-width: 500px;
   }
 }
+.footer .joinUs {
+  height: 80px;
+}
 .footer .footerBTN {
   display: flex;
   width: 750px;
   justify-content: space-evenly;
   margin-top: 30px;
+}
+@media only screen and (max-width: 750px) {
+  .footer .footerBTN {
+    max-width: 500px;
+  }
 }
 .footer .footerBTN button {
   font-family: 'Roboto', sans-serif;
@@ -375,23 +383,14 @@ nav .logInBTN:hover {
 }
 @media only screen and (max-width: 750px) {
   .footer .footerBTN button {
-    max-width: 500px;
+    width: 160px;
+    height: 26px;
     font-size: 1rem;
   }
 }
 .footer .footerBTN button:hover {
   color: #E97676;
   background-color: #fff;
-}
-.footer h3 {
-  font-size: 3rem;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-}
-.footer .joinUs {
-  height: 80px;
 }
 .footer .yellowFooter {
   display: flex;
@@ -403,33 +402,50 @@ nav .logInBTN:hover {
   height: 180px;
 }
 .footer .subscribe {
+  display: flex;
+  flex-direction: column;
   height: 140px;
 }
 .footer .subscribe h2 {
   display: flex;
-  width: 100%;
   justify-content: center;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
   font-weight: bold;
   color: #fff;
   height: 54px;
   margin-top: 5px;
 }
+@media only screen and (max-width: 750px) {
+  .footer .subscribe h2 {
+    font-size: 2.5rem;
+  }
+}
 .footer .subscribe h3 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
   font-weight: 300;
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   color: #fff;
   height: 48px;
   margin-top: 5px;
 }
+@media only screen and (max-width: 750px) {
+  .footer .subscribe h3 {
+    font-size: 1.5rem;
+  }
+}
 .footer .email {
   display: flex;
-  width: 100%;
+  width: 750px;
   justify-content: space-evenly;
   margin-bottom: 6px;
   flex: 1 1 200px;
+}
+@media only screen and (max-width: 750px) {
+  .footer .email {
+    width: 500px;
+  }
 }
 .footer .email input {
   width: 280px;
@@ -439,6 +455,20 @@ nav .logInBTN:hover {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   color: #C2C2C2;
+}
+@media only screen and (max-width: 998px) {
+  .footer .email input {
+    height: 37px;
+    width: 230px;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .footer .email input {
+    height: 27px;
+    width: 197px;
+    font-size: 1.2rem;
+  }
 }
 .footer .email button {
   font-family: 'Roboto', sans-serif;
@@ -450,17 +480,36 @@ nav .logInBTN:hover {
   border-radius: 10px;
   cursor: pointer;
 }
+@media only screen and (max-width: 998px) {
+  .footer .email button {
+    height: 37px;
+    width: 230px;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .footer .email button {
+    height: 27px;
+    width: 197px;
+    font-size: 1.2rem;
+  }
+}
 .footer .email button:hover {
   color: #E97676;
   background-color: #fff;
 }
 .footer .iconRow {
   display: flex;
-  width: 100%;
+  width: 500px;
   justify-content: space-evenly;
   margin-top: 10px;
   opacity: 0.3;
-  flex: 1 1 75px;
+}
+.footer .iconRow img {
+  height: auto;
+  widows: auto;
+  max-width: 35px;
+  min-width: 35px;
 }
 .homePageImage {
   background-image: url(../Img/Home_page_Images/landingPageImage.jpg);
