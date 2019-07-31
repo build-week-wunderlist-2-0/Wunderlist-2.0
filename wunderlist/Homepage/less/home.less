@@ -92,6 +92,10 @@
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   text-align: center;
+  width: 200px;
+  font-weight: 300;
+  line-height: 20px;
+  
 }
 
 
@@ -116,6 +120,7 @@
 // bottom section styling
 
 .glance {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,6 +128,16 @@
   height: 144px;
   max-width: 1440px;
   margin-top: 45px;
+
+  @media only screen and (max-width: 900px) {
+    max-width: 800px;
+    height: 300px;
+  }
+
+  @media only screen and (max-width: 750px) {
+    max-width: 650px;
+    height: 400px;
+  }
 }
 
 .glance h1 {
@@ -133,17 +148,29 @@
   font-weight: 300;
   color: black;
   text-align: center;
+  margin-bottom: 15px;
+  
+
+  @media only screen and (max-width: 750px) {
+    font-size: 2.2rem;
+  }
 }
 
 .glance p {
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 5px;
-  line-height: 35px;
+  line-height: 20px;
+
+  @media only screen and (max-width: 750px) {
+    font-size: .9rem;
+  }
 }
+
+// carousel Styling
 
 .carousel {
   display: flex;
@@ -155,15 +182,12 @@
 .carousel img {
   width: 350px;
   height: 250px;
+
+  // @media only screen and (max-width: 900px) {
+  //   display: none;
+  // }
 }
 
-
-
-  // .featureIcons{
-  //   flex-direction: column;
-  //   flex-wrap: wrap;
-  //   width: 300px;
-  // }
 
 
 
