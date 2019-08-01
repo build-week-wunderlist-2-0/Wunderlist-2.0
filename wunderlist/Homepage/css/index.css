@@ -698,8 +698,8 @@ nav .logInBTN:hover {
   }
 }
 .carousel img {
-  width: 350px;
-  height: 250px;
+  width: 283px;
+  height: 200px;
 }
 @media only screen and (max-width: 750px) {
   .carousel img {
