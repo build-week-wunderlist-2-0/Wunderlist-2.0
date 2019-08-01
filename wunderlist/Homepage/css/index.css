@@ -1003,6 +1003,9 @@ nav .logInBTN:hover {
     width: 90%;
     height: 550px;
   }
+  .blogEntryText2 img {
+    order: 3;
+  }
 }
 .blogEntry h1 {
   text-align: center;
