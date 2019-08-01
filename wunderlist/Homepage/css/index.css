@@ -723,7 +723,14 @@ nav .logInBTN:hover {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-@media (max-width: 500px) {
+@media (max-width: 915px) {
+  .aboutWunderList {
+    padding: 5%;
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 600px) {
   .aboutWunderList {
     padding: 5%;
     width: 100%;
@@ -741,7 +748,7 @@ nav .logInBTN:hover {
   align-content: center;
   margin-bottom: 40px;
 }
-@media (max-width: 500px) {
+@media (max-width: 915px) {
   .centerContent {
     flex-direction: column;
   }
@@ -780,7 +787,18 @@ nav .logInBTN:hover {
   text-align: center;
   align-content: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 915px) {
+  .centerContent .contentArea1,
+  .centerContent .contentArea2,
+  .centerContent .contentArea3,
+  .centerContent .image1,
+  .centerContent .image2,
+  .centerContent .image3 {
+    width: 100%;
+    padding: 5%;
+  }
+}
+@media (max-width: 600px) {
   .centerContent .contentArea1,
   .centerContent .contentArea2,
   .centerContent .contentArea3,
