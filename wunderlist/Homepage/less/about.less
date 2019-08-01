@@ -34,13 +34,31 @@
 
   @media(max-width:500px){
   		flex-direction: column;
+      .contentArea1{
+        order:1;
+        }
+        .image1{
+          order:2;
+        }
+        .contentArea2{
+          order:3;
+        }
+        .image2{
+          order:4;
+        }
+        .contentArea3{
+          order:5;
+        }
+        .image3{
+          order:6;
+        }
   	}
 
   img {
     width: 100%;
     }
 
-.contentArea, .image1, .image2, .image3 {
+.contentArea1, .contentArea2, .contentArea3, .image1, .image2, .image3 {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -53,7 +71,7 @@
   padding: 5%;
   }
 }
-  .contentArea p {
+   p {
     // padding: 3% 20%;
     display: flex;
     justify-content: space-between;

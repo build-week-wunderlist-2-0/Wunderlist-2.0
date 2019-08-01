@@ -745,11 +745,31 @@ nav .logInBTN:hover {
   .centerContent {
     flex-direction: column;
   }
+  .centerContent .contentArea1 {
+    order: 1;
+  }
+  .centerContent .image1 {
+    order: 2;
+  }
+  .centerContent .contentArea2 {
+    order: 3;
+  }
+  .centerContent .image2 {
+    order: 4;
+  }
+  .centerContent .contentArea3 {
+    order: 5;
+  }
+  .centerContent .image3 {
+    order: 6;
+  }
 }
 .centerContent img {
   width: 100%;
 }
-.centerContent .contentArea,
+.centerContent .contentArea1,
+.centerContent .contentArea2,
+.centerContent .contentArea3,
 .centerContent .image1,
 .centerContent .image2,
 .centerContent .image3 {
@@ -761,7 +781,9 @@ nav .logInBTN:hover {
   align-content: center;
 }
 @media (max-width: 500px) {
-  .centerContent .contentArea,
+  .centerContent .contentArea1,
+  .centerContent .contentArea2,
+  .centerContent .contentArea3,
   .centerContent .image1,
   .centerContent .image2,
   .centerContent .image3 {
@@ -769,7 +791,7 @@ nav .logInBTN:hover {
     padding: 5%;
   }
 }
-.centerContent .contentArea p {
+.centerContent p {
   display: flex;
   justify-content: space-between;
   align-items: center;
