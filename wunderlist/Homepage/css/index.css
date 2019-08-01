@@ -935,7 +935,7 @@ nav .logInBTN:hover {
   margin: auto;
   display: flex;
   justify-content: center;
-  align-content: space-between;
+  align-content: space-around;
   flex-wrap: wrap;
   height: 850px;
   max-width: 1440px;
@@ -944,7 +944,12 @@ nav .logInBTN:hover {
 }
 @media only screen and (max-width: 1055px) {
   .blogEntry {
-    height: 1110px;
+    height: 1200px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .blogEntry {
+    height: 1300px;
   }
 }
 .blogEntryText1 {
