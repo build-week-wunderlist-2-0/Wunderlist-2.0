@@ -13,12 +13,13 @@
   font-size: 4rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  @media(max-width:915px){
+  @media @tablet{
       padding: 5%;
       width: 100%;
       font-size: 3rem;
       }
-  @media(max-width:600px){
+
+  @media @phone{
       padding: 5%;
       width: 100%;
       font-size: 2rem;
@@ -36,7 +37,7 @@
   align-content: center;
   margin-bottom: 40px;
 
-  @media(max-width:915px){
+  @media @tablet{
   		flex-direction: column;
       .contentArea1{
         order:1;
@@ -70,12 +71,12 @@
   text-align: center;
   align-content: center;
 
-  @media(max-width:915px){
+  @media @tablet{
   width: 100%;
   padding: 5%;
   }
 
-  @media(max-width:600px){
+  @media @phone{
   width: 100%;
   padding: 5%;
   }

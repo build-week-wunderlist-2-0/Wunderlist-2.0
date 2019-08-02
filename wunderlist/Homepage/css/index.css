@@ -271,7 +271,7 @@ nav {
     justify-content: space-evenly;
   }
 }
-@media only screen and (max-width: 600px) {
+@media (max-width:600px) {
   nav {
     display: flex;
     max-width: 600px;
@@ -284,7 +284,7 @@ nav ul {
   align-items: center;
   margin-right: 2%;
 }
-@media only screen and (max-width: 600px) {
+@media (max-width:600px) {
   nav ul {
     margin-right: 0;
   }
@@ -723,14 +723,14 @@ nav .logInBTN:hover {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-@media (max-width: 915px) {
+@media (max-width:915px) {
   .aboutWunderList {
     padding: 5%;
     width: 100%;
     font-size: 3rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width:600px) {
   .aboutWunderList {
     padding: 5%;
     width: 100%;
@@ -748,7 +748,7 @@ nav .logInBTN:hover {
   align-content: center;
   margin-bottom: 40px;
 }
-@media (max-width: 915px) {
+@media (max-width:915px) {
   .centerContent {
     flex-direction: column;
   }
@@ -787,7 +787,7 @@ nav .logInBTN:hover {
   text-align: center;
   align-content: center;
 }
-@media (max-width: 915px) {
+@media (max-width:915px) {
   .centerContent .contentArea1,
   .centerContent .contentArea2,
   .centerContent .contentArea3,
@@ -798,7 +798,7 @@ nav .logInBTN:hover {
     padding: 5%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width:600px) {
   .centerContent .contentArea1,
   .centerContent .contentArea2,
   .centerContent .contentArea3,
